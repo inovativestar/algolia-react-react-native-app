@@ -1,0 +1,86 @@
+.react-date-picker__button {
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.react-date-picker__button:focus {
+    border-bottom: 1px solid rgba(0,0,0,.3);
+}
+
+.ReactModal__Body--open {
+    overflow: hidden;
+}
+
+/* search */
+
+.ais-SearchBox {
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+}
+
+.ais-SearchBox-input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 18px 24px 18px 50px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ECEFF1;
+}
+
+.ais-SearchBox-submit {
+    position: absolute;
+    background: transparent;
+    border: none;
+    top: 18px;
+    left: 23px;
+    outline: none;
+}
+
+.ais-SearchBox-submitIcon {
+    width: 16px;
+    height: 16px;
+}
+
+.ais-SearchBox-reset {
+    display: none;
+}
+
+.ais-Hits-list {
+    list-style: none;
+}
+
+.ais-Pagination {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+}
+
+.ais-Pagination-list {
+    list-style: none;
+    display: flex;
+}
+
+.ais-Pagination-item {
+    margin: 0 2px;
+    padding: 10px 0;
+    border-radius: 4px;
+    background: rgba(0,0,0,.1);
+    color: #444;
+}
+
+.ais-Pagination-item--selected {
+    background: #3D5AFE;
+    color: #fff;
+}
+
+.ais-Pagination-item--disabled {
+    opacity: .4;
+}
+
+.ais-Pagination-link {
+    padding: 10px 17px;
+}

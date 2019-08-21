@@ -1,0 +1,21 @@
+{
+  "name": "algolia-official",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/storage": "^1.7.0",
+    "algoliasearch": "^3.29.0",
+    "dotenv": "^6.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "firebase": "^5.2.0",
+    "mime": "^2.3.1",
+    "multer": "^1.3.1"
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Title</title>
+</head>
+
+<body>
+
+  <form enctype="multipart/form-data" action="#">
+    <input type="file" name="file" />
+    <button type="submit">Send</button>
+  </form>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+
+    var form = document.querySelector('form');
+    var formInputFile = document.querySelector('form input');
+
+
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      var file = formInputFile.files[0];
+      console.log("Submit", file);
+      var formData = new FormData();
+
+      formData.append("file", file, +new Date());
+
+      $.ajax({
+        type: "POST",
+        timeout: 50000,
+        url: 'http://localhost:3000/upload',
+        data: formData,
+        processData: false,
+        contentType: false,
+        error: (e) => console.warn(e),
+        success: function (data) {
+          alert('success');
+          console.log(data)
+          return false;
+        }
+      });
+    })
+
+  </script>
+</body>
+
+</html>

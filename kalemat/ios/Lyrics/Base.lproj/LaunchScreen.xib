@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="lv0-92-GVh">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2018 EssamSoft. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="xXn-mj-1dH">
+                    <rect key="frame" x="20" y="446" width="440" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="knv-5M-BQm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="0.75050834760273977" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KALEMAT v1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvS-Er-5sX">
+                    <rect key="frame" x="20" y="421" width="440" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="0.75050834760273977" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="mPA-Wm-niU">
+                    <rect key="frame" x="144" y="154" width="192" height="173"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="mPA-Wm-niU" secondAttribute="height" multiplier="192:173" id="zke-Od-KPh"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.61036315618748815" green="0.80678840935649232" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="lv0-92-GVh" secondAttribute="trailing" id="9nF-HL-ygx"/>
+                <constraint firstAttribute="bottom" secondItem="xXn-mj-1dH" secondAttribute="bottom" constant="14" id="B5M-kN-75w"/>
+                <constraint firstItem="mPA-Wm-niU" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="IrU-gk-PKf"/>
+                <constraint firstItem="lv0-92-GVh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="J2H-aM-lTM"/>
+                <constraint firstAttribute="bottom" secondItem="lv0-92-GVh" secondAttribute="bottom" id="THi-8R-xzp"/>
+                <constraint firstItem="xXn-mj-1dH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="WwF-iq-PcA"/>
+                <constraint firstItem="mPA-Wm-niU" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.4" id="l4j-LL-UFt"/>
+                <constraint firstItem="qvS-Er-5sX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="l71-aq-3BV"/>
+                <constraint firstAttribute="trailing" secondItem="qvS-Er-5sX" secondAttribute="trailing" constant="20" id="lva-KB-NZc"/>
+                <constraint firstItem="xXn-mj-1dH" firstAttribute="top" secondItem="qvS-Er-5sX" secondAttribute="bottom" constant="8.5" id="s3Y-Q9-pj8"/>
+                <constraint firstAttribute="trailing" secondItem="xXn-mj-1dH" secondAttribute="trailing" constant="20" id="sSB-DK-S72"/>
+                <constraint firstItem="lv0-92-GVh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="x7k-G0-O5W"/>
+                <constraint firstItem="mPA-Wm-niU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="yjj-Sb-geP"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="422" y="385"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg.png" width="375" height="667"/>
+        <image name="logo.png" width="639" height="500"/>
+    </resources>
+</document>
